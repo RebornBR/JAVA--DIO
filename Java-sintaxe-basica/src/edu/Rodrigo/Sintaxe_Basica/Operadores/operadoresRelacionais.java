@@ -1,4 +1,4 @@
-package edu.Rodrigo.Operadores;
+package edu.Rodrigo.Sintaxe_Basica.Operadores;
 
 public class operadoresRelacionais {
      public static void main(String[] args) throws Exception {
@@ -42,6 +42,6 @@ public class operadoresRelacionais {
         }else{
            System.out.println("Falso, pois nenhuma condição é verdadeira");
         }
-
+            System.out.println("altere os valroes das variaveis das linhas 28 e 29, para testar outras possibilidades.");
     }
 }

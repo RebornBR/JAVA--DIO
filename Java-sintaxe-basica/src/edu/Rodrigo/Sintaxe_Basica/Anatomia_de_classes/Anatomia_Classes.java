@@ -1,4 +1,4 @@
-package edu.Rodrigo.Anatomia_de_classes;
+package edu.Rodrigo.Sintaxe_Basica.Anatomia_de_classes;
 public class Anatomia_Classes { // todos os arquivos, ou pelo menos a maioria deles, começam dessa forma. Deve conter o mesmo nome do arquivo.
     public static void main(String[] args) throws Exception { // torna todo o codigo dentro dele, isto é, dentro das {}, executavel, possibilitando o run, para rodar os códigos. Similar fun main() kotlin
         System.out.println("Hello, World!");
@@ -19,8 +19,11 @@ public class Anatomia_Classes { // todos os arquivos, ou pelo menos a maioria de
 
         String primeiroNome = "Paulo";
         String segundoNome = "Gustavo";
-        String nome = nomeCompleto(primeiroNome, segundoNome);
-        System.out.println(nome);
+        String nome = nomeCompleto(primeiroNome, segundoNome); // criação da variável que irá receber o retorno do método
+        System.out.println(nome); // não precisamos criar uma variavel para armazenar o retortno do metodo/função
+        // podemos simplesmente utilizar 
+        System.out.println("teste da outra forma:");
+        System.out.println(nomeCompleto(primeiroNome, segundoNome));
         
     }
     public static double somar (double num1, double num2){ 

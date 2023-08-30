@@ -1,4 +1,4 @@
-package edu.Rodrigo.Operadores;
+package edu.Rodrigo.Sintaxe_Basica.Operadores;
 
 public class operadores {
     public static void main(String[] args) throws Exception {
