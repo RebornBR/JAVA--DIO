@@ -16,16 +16,16 @@ public class ContaTerminal {
 
     int numConta;
     String numAgencia;
-    String nome;
     double numLimite;
 
     System.out.println("Digite seu nome completo e aperte enter:");
-    nome = scanner.nextLine();
+    String nome = scanner.nextLine();
     System.out.println("Seu nome completo: " + nome + " está correto ? (Digite '1' para sim e '0'para não ) e aperte enter");
     controleUm = scanner.nextInt();
 
     if(controleUm == 0 ){
         System.out.println("Por favor, digite seu nome completo novamente e aperte enter:");
+        nome = scanner.nextLine();
         nome = scanner.nextLine();
         System.out.println("Digite o número da conta e aperte enter:");
         numConta = scanner.nextInt();
