@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * @author Reborn
- * @version 1.0
+ * @version FINAL
  * @since 31/08/2023
  */
 
@@ -16,17 +16,18 @@ public class ContaTerminal {
 
     int numConta;
     String numAgencia;
+    String nome;
     double numLimite;
 
     System.out.println("Digite seu nome completo e aperte enter:");
-    String nome = scanner.nextLine();
+    nome = scanner.nextLine();
     System.out.println("Seu nome completo: " + nome + " está correto ? (Digite '1' para sim e '0'para não ) e aperte enter");
     controleUm = scanner.nextInt();
 
     if(controleUm == 0 ){
         System.out.println("Por favor, digite seu nome completo novamente e aperte enter:");
         nome = scanner.nextLine();
-        nome = scanner.nextLine();
+        nome = scanner.nextLine(); // repetir pq com uma simplesmente não ler, pula para o proximo comando.
         System.out.println("Digite o número da conta e aperte enter:");
         numConta = scanner.nextInt();
         System.out.println("Digite o número da agência e aperte enter:");
