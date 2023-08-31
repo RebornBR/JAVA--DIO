@@ -19,9 +19,9 @@ public class ContaTerminal {
     String nome;
     double numLimite;
 
-    System.out.println("Digite seu nome e aperte enter:");
+    System.out.println("Digite seu nome completo e aperte enter:");
     nome = scanner.nextLine();
-    System.out.println("Seu nome: " + nome + " está correto ? (Digite '1' para sim e '0'para não ) e aperte enter");
+    System.out.println("Seu nome completo: " + nome + " está correto ? (Digite '1' para sim e '0'para não ) e aperte enter");
     controleUm = scanner.nextInt();
 
     if(controleUm == 0 ){
