@@ -21,7 +21,6 @@ public class ContaTerminal {
 
     System.out.println("Digite seu nome e aperte enter:");
     nome = scanner.nextLine();
-    System.out.println("Digite seu sobrenome e aperte enter: ");
     System.out.println("Seu nome: " + nome + " está correto ? (Digite '1' para sim e '0'para não ) e aperte enter");
     controleUm = scanner.nextInt();
 
@@ -36,13 +35,14 @@ public class ContaTerminal {
         numLimite = scanner.nextDouble();
 
     }else {
-       System.out.println("Digite o número da conta e aperte enter:");
+        System.out.println("Digite o número da conta e aperte enter:");
         numConta = scanner.nextInt();
         System.out.println("Digite o número da agência e aperte enter:");
         numAgencia = scanner.next();
         System.out.println("Digite o limite desejado para seu cartão de crédito:");
         numLimite = scanner.nextDouble();
     }
+
     System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é: " + numAgencia + ", conta: " + numConta + ", e seu limite de: R$" + numLimite + " foi aprovado, PARABÉNS!");
     
 
