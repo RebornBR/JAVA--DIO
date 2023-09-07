@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.Operadores;
+package Sintaxe_Basica.Operadores;
 
 import java.util.Locale;
 import java.util.Scanner;

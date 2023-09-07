@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.Tipos_e_Variaveis;
+package Sintaxe_Basica.Tipos_e_Variaveis;
 
 public class tipos_e_variaveis {
     public static void main(String[] args) throws Exception {

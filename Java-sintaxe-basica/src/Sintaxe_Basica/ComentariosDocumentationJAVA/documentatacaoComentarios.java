@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.ComentariosDocumentationJAVA;
+package Sintaxe_Basica.ComentariosDocumentationJAVA;
 
 import java.util.Locale;
 import java.util.Scanner;

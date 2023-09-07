@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.ProjetoMetodosEClasseSmartTV;
+package Sintaxe_Basica.ProjetoMetodosEClasseSmartTV;
 
 public class SmartTV {
     boolean ligadoOuDesligado = false;

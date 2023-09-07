@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.Escopos;
+package Sintaxe_Basica.Escopos;
 
 public class escopo {
     //variavel da classe conta

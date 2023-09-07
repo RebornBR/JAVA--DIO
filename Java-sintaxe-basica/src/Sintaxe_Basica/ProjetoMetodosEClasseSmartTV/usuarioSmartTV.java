@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.ProjetoMetodosEClasseSmartTV;
+package Sintaxe_Basica.ProjetoMetodosEClasseSmartTV;
 
 import java.util.Locale;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package edu.Rodrigo.Sintaxe_Basica.Anatomia_de_classes;
+package Sintaxe_Basica.Anatomia_de_classes;
 public class Anatomia_Classes { // todos os arquivos, ou pelo menos a maioria deles, começam dessa forma. Deve conter o mesmo nome do arquivo.
     public static void main(String[] args) throws Exception { // torna todo o codigo dentro dele, isto é, dentro das {}, executavel, possibilitando o run, para rodar os códigos. Similar fun main() kotlin
         System.out.println("Hello, World!");
