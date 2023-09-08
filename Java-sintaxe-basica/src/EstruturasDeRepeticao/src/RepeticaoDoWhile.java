@@ -22,6 +22,7 @@ System.out.println("Discando...");
 
 /**
  * gera um número aleatório entre 0 e 9, se for o número 1, será true. 
+ * o valor de atendeu é um booleano, a pergunta do atendeu, é se o número aleatorio é igual a 1
  * @return retorna o valor de atendeu, enquanto o atendeu for false, executará o loop do while.
  */
 	private static boolean pessoaAtendeu() { 
