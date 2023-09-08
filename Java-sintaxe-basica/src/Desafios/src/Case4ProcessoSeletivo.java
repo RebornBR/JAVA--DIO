@@ -12,7 +12,7 @@ public class Case4ProcessoSeletivo {
 
 /**
  * 
- * @return retorna true se o número aleatorio entre 0 e 3 for 1
+ * @return retorna true se o número aleatorio entre 1 e 4 for 1
  */
 static boolean pessoaAtendeu() {
 return new Random().nextInt(4)==1;	
