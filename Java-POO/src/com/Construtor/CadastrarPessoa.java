@@ -1,9 +1,9 @@
-package Construtor;
+package com.Construtor;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import Construtor.model.Pessoa;
+import com.Construtor.model.Pessoa;
 
 
 public class CadastrarPessoa {

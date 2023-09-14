@@ -1,6 +1,6 @@
-package Construtor.model;
+package com.Construtor.model;
 
-import Construtor.services.ExceptionCpf;
+import com.Construtor.services.ExceptionCpf;
 
 public class Pessoa {
     private String nome;

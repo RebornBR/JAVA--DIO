@@ -1,3 +1,4 @@
+package com;
 import com.lanchonete.area.cliente.Cliente;
 import com.lanchonete.atendimento.Atendente;
 import com.lanchonete.atendimento.cozinha.Cozinheiro;
