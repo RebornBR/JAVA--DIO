@@ -1,7 +1,7 @@
-package PilaresDoPOO.Interface.Impressora;
+package PilaresDoPOO.Interface.Digitalizadora;
 
-public interface Impressora {
-    public void imprimir(); 
+public interface Digitalizadora {
+    public void digitalizarEscaneando();
 /*
 o método não tem corpo{}, similar a classe abstrata. 
 para utilizarmos, ou seja, herdamos a caracteristica dessa Interface. Usamos o comando implements 
