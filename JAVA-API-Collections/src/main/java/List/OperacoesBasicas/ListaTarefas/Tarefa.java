@@ -1,4 +1,4 @@
-package main.java.List.ListaTarefas;
+package main.java.List.OperacoesBasicas.ListaTarefas;
 
 public class Tarefa { 
 // nossa classe Objeto

@@ -1,4 +1,4 @@
-package main.java.List.DesafioCarrinhoCompras;
+package main.java.List.OperacoesBasicas.DesafioCarrinhoCompras;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -28,7 +28,7 @@ public class AtendenteCaixa {
         caixa.exibirItens();
         
         while(!produtoParaRemoção.equals("1")){ // enquanto produtoParaRemocao for diferente de 1
-        System.out.println("Digite o nome do produto que será removido");
+        System.out.println("Digite o nome do produto que será removido, digite '1' para finalizar");
         produtoParaRemoção = scanner.next();
         caixa.removerItem(produtoParaRemoção);
         }

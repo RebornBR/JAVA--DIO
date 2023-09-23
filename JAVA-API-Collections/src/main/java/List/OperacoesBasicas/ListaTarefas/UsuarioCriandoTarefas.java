@@ -1,4 +1,4 @@
-package main.java.List.ListaTarefas;
+package main.java.List.OperacoesBasicas.ListaTarefas;
 
 import java.util.Locale;
 import java.util.Scanner;
