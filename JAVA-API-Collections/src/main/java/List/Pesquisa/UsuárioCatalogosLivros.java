@@ -15,7 +15,7 @@ public class UsuárioCatalogosLivros {
     int anoPublicacaoLivro;
 
 //vamos adicionar alguns livros para efeito de teste.
-// podemos criar 3 variaveis, receber os valores pelo usuario e em seguida as passar como parametros no metódo adicionarLivro()
+// podemos criar 3 variaveis, receber os valores pelo usuario e em seguida as passar como parametros no método adicionarLivro()
         livrosBiblioteca.adicionarLivro("HARRY POTTER E A PEDRA FILOSOFAL", "J. K. ROWLING", 1997);
         livrosBiblioteca.adicionarLivro("HARRY POTTER E A CÂMARA SECRETA", "J. K. ROWLING", 1998);
         livrosBiblioteca.adicionarLivro("HARRY POTTER E O PRISIONEIRO DE AZKABAN", "J. K. ROWLING", 1999);
