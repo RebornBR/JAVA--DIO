@@ -3,13 +3,19 @@ package main.java.List.Pesquisa;
 import java.util.Locale;
 import java.util.Scanner;
 
+import main.java.List.Pesquisa.Livros.CatalogoLivros;
+
 public class UsuárioCatalogosLivros {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
     CatalogoLivros livrosBiblioteca = new CatalogoLivros();    
     int escolhaExibirTudo;
+    String tituloLivro;
+    String autorLivro;
+    int anoPublicacaoLivro;
 
-//vamos adicionar alguns livros para efeito de teste.   
+//vamos adicionar alguns livros para efeito de teste.
+// podemos criar 3 variaveis, receber os valores pelo usuario e em seguida as passar como parametros no metódo adicionarLivro()
         livrosBiblioteca.adicionarLivro("HARRY POTTER E A PEDRA FILOSOFAL", "J. K. ROWLING", 1997);
         livrosBiblioteca.adicionarLivro("HARRY POTTER E A CÂMARA SECRETA", "J. K. ROWLING", 1998);
         livrosBiblioteca.adicionarLivro("HARRY POTTER E O PRISIONEIRO DE AZKABAN", "J. K. ROWLING", 1999);
@@ -23,6 +29,14 @@ public class UsuárioCatalogosLivros {
         livrosBiblioteca.adicionarLivro("A TORMENTA DE ESPADAS", "GEORGE R. R. MARTIN", 2000);
         livrosBiblioteca.adicionarLivro("O FESTIM DOS CORVOS", "GEORGE R. R. MARTIN", 2005);
         livrosBiblioteca.adicionarLivro("A DANÇA DOS DRAGÕES", "GEORGE R. R. MARTIN", 2011);
+        
+        System.out.println("titulo livro");
+        tituloLivro = scanner.nextLine();
+        System.out.println("autor livro");
+        autorLivro = scanner.nextLine();
+        System.out.println("Ano publicação livro");
+        anoPublicacaoLivro = scanner.nextInt();
+        livrosBiblioteca.adicionarLivro(tituloLivro, autorLivro, anoPublicacaoLivro);
 
     System.out.println("Temos todos os livros de harry potter e as crônicas de gelo e fogo(Game of thrones):");
 
