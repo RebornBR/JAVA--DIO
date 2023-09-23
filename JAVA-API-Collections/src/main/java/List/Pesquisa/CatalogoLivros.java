@@ -79,7 +79,7 @@ public class CatalogoLivros {
 
   /**
    * Compara o parametro titulo com o titulo presente no array livroList.
-   * se forem iguais, retorna o livro com o respectivo titulo.
+   * se forem iguais, retorna o livro com o respectivo titulo. E nosso livroTitulo será igual a l
    */
   public Livro pesquisarPorTitulo(String titulo) {
     Livro livroPorTitulo = null;
