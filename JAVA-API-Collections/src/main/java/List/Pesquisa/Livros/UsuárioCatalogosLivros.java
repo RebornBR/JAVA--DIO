@@ -1,9 +1,7 @@
-package main.java.List.Pesquisa;
+package main.java.List.Pesquisa.Livros;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import main.java.List.Pesquisa.Livros.CatalogoLivros;
 
 public class UsuárioCatalogosLivros {
   public static void main(String[] args) {

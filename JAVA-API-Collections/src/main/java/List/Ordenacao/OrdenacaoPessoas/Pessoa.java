@@ -1,8 +1,12 @@
-package main.java.List.Ordenacao;
+package main.java.List.Ordenacao.OrdenacaoPessoas;
 
 import java.util.Comparator;
 
 public class Pessoa implements Comparable<Pessoa> {
+ /* 
+  * Implementamos a interface Comparable que terá o tipo pessoa.
+  * a implementação permite que utilizemos seu método na nossa classe Pessoa
+ */
   //atributos
   private String nome;
   private int idade;
@@ -14,9 +18,12 @@ public class Pessoa implements Comparable<Pessoa> {
     this.altura = altura;
   }
 
-  @Override
-  public int compareTo(Pessoa p) {
+  public int compareTo(Pessoa p) { // método compareTo
     return Integer.compare(idade, p.getIdade());
+  /*
+   * Integer tem o método compare, ira ordena os elementos, os maiores entre idade e o p.getIdade
+   * Utilizamos sempre o wrapper class, ou seja, Integer, Float, Double 
+   */
   }
 
   public String getNome() {
@@ -31,16 +38,19 @@ public class Pessoa implements Comparable<Pessoa> {
     return altura;
   }
 
-  @Override
+  
   public String toString() {
-    return "Pessoa{" + "nome= " + nome  + ", idade= " + idade + ", altura= " + altura + '}';
+    return "Pessoa{" + "nome= " + nome  + ", idade= " + idade + ", altura= " + altura + '}' + "\n";
   }
 }
+/*
 
+ * Comparator precisa ser utilizado fora da classe principal.
+ * método compare, ordena os elementos
+ */
 class ComparatorPorAltura implements Comparator<Pessoa> {
   @Override
   public int compare(Pessoa p1, Pessoa p2) {
     return Double.compare(p1.getAltura(), p2.getAltura());
   }
-    
 }
