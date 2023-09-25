@@ -26,12 +26,12 @@ public class ListaNumero {
     public void numeroOrdenadoReverso() {
         List<Integer> numerosOrdemZA = new ArrayList<>(this.numerosList);
         if (!numerosList.isEmpty()) {
-           numerosOrdemZA.sort(Collections.reverseOrder()); //ordena inversamente a arraylist numerosOrdemZA
+          numerosOrdemZA.sort(Collections.reverseOrder()); //ordena inversamente a arraylist numerosOrdemZA
            // retorna a ordem inversa, ou seja, maior para menor.
+          System.out.println("Numeros ordenados Z-A(Maior para Menor)" + numerosOrdemZA);
         } else {
       System.out.println("A lista está vazia!");
     }
-       System.out.println("Numeros ordenados Z-A(Maior para Menor)" + numerosOrdemZA);
   }
 
   public void exibirNumeros() {
