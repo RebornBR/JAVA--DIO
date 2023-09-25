@@ -43,6 +43,6 @@ public class UsuarioConjuntoConvidados{
        }
        System.out.println("Lista atualizada após a remoção");
        usuarioConjunto.exibirConvidados();
-
+       System.out.println("Total de convidados: " + usuarioConjunto.contarConvidados());
        }
 }
