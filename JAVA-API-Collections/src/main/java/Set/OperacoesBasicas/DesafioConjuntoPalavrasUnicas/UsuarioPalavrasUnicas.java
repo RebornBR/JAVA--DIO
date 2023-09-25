@@ -1,4 +1,4 @@
-package main.java.Set.OperacoesBasicas.PalavrasUnicas;
+package main.java.Set.OperacoesBasicas.DesafioConjuntoPalavrasUnicas;
 
 import java.util.Locale;
 import java.util.Scanner;
