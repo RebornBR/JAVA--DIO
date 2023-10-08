@@ -25,8 +25,8 @@ public class AgendaEventos {
   public void exibirAgenda() {
     Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);
     for (Map.Entry<LocalDate, Evento> entry : eventosTreeMap.entrySet()) { // criamos um mapa que sera um Entry que terá LocalDate(chave) e Evento(valor) será chamado entry e fará um set com o entrySet no nosso TreeMap(EventosTreeMap)
-      LocalDate dataEvento = entry.getKey();
-      Evento evento = entry.getValue();
+      LocalDate dataEvento = entry.getKey(); //obtem a chave do nosso entrySet(eventosTreeMap)
+      Evento evento = entry.getValue(); // obtem o valor do nosso entrySet(eventosTreeMap)
       System.out.println("Data: " + dataEvento + ", Evento: " + evento.getNome() + ", Atração: " + evento.getAtracao());
     }
   }
