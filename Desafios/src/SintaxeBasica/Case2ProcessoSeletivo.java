@@ -1,3 +1,4 @@
+package SintaxeBasica;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Case2ProcessoSeletivo {

@@ -1,3 +1,4 @@
+package SintaxeBasica;
 public class Case3ProcessoSeletivo {
     public static void main(String[] args) {
         String  candidatosSelecionados[] = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};

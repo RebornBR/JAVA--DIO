@@ -1,3 +1,4 @@
+package SintaxeBasica;
 import java.util.Random;
 
 public class Case4ProcessoSeletivo {
