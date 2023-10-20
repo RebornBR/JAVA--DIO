@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 // nossa classe container
 @Component // teremos um component que é um stereotype do spring terá outro component chamado calculadora(uma dependencia)
 public class ContainerAPP implements CommandLineRunner { // implementação do CommandLineRunner
-    // comando que ao inicializarmos nossa aplicação, executaremos o nosso Container, que contem nossos objetos
+    // comando que ao inicializarmos nossa aplicação, tudo que estiver dentro dele, sera executado, oq tiver dentro dele é nosso "container"
     // quando o container subir, iniciar, essa classe será iniciada.
     @Autowired // para podermos inserir nossos components
     private Calculadora calculadora; // criamos um objeto/component calculadora sem o new
