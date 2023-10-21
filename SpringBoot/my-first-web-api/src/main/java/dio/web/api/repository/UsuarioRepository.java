@@ -14,7 +14,7 @@ public class UsuarioRepository { // fake banco de dados, simulando um banco de d
         else
             System.out.println("UPDATE - Recebendo o usuário na camada de repositório");
 
-        System.out.println(usuario);
+        System.out.println(usuario); // retornamos o usuario
     }
     public void deleteById(Integer id){
         System.out.println(String.format("DELETE/id - Recebendo o id: %d para excluir um usuário", id));
@@ -23,16 +23,18 @@ public class UsuarioRepository { // fake banco de dados, simulando um banco de d
     public List<Usuario> findAll(){
         System.out.println("LIST - Listando os usários do sistema");
         List<Usuario> usuarios = new ArrayList<>();
-        usuarios.add(new Usuario("gleyson","password"));
+        usuarios.add(new Usuario("rodrigo","password"));
         usuarios.add(new Usuario("frank","masterpass"));
         return usuarios;
     }
     public Usuario findById(Integer id){
         System.out.println(String.format("FIND/id - Recebendo o id: %d para localizar um usuário", id));
-        return new Usuario("gleyson","password");
+        return new Usuario("rodrigo","password"); // sempre retorna isso, pois é apenas uma simulação de banco de dados
     }
-    public Usuario findByUsername(String username){
-        System.out.println(String.format("FIND/username - Recebendo o usernamae: %s para localizar um usuário", username));
-        return new Usuario("gleyson","password");
+    public Usuario findByUsername(String loginUsuario){
+        System.out.println(String.format("FIND/loginUsuario - Recebendo o login: %s para localizar um usuário", loginUsuario));
+        // %s indica que o parametro que está fora do "" será retornado ali dentro
+        return new Usuario("frannk","password");
+
     }
 }
