@@ -22,10 +22,10 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return headers;
     }
     private ResponseError responseError(String message,HttpStatus statusCode){ //O método responseError() retorna o corpo do erro da aplicação;
-        ResponseError responseError = new ResponseError();
-        responseError.setStatus("error");
-        responseError.setError(message);
-        responseError.setStatusCode(statusCode.value());
+        ResponseError responseError = new ResponseError(); // estamos criando um novo ResponseError
+        responseError.setStatus("error"); // usando o método do ResponseError
+        responseError.setError(message); // usando o método do ResponseError
+        responseError.setStatusCode(statusCode.value()); // usando o método do ResponseError
         return responseError;
     }
     @ExceptionHandler(Exception.class)
