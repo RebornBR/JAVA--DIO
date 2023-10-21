@@ -32,7 +32,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     private ResponseEntity<Object> handleGeneral(Exception e, WebRequest request) { // O método handleGeneral() intercepta as exceções do sistema e verifica se é uma exceção genérica ou de negócio;
         if (e.getClass().isAssignableFrom(UndeclaredThrowableException.class)) {
             UndeclaredThrowableException exception = (UndeclaredThrowableException) e;
-            return handleBusinessException((BusinessException) exception.getUndeclaredThrowable(), request); // O método handleBusinessException() é destinado a criar um ResponseEntity contendo o nosso ResponseError devidamente estruturado.
+            return handleBusinessException((BusinessException) exception.getUndeclaredThrowable(), request); // O método handleBusinessException() que recebe um BusinessException é destinado a criar um ResponseEntity contendo o nosso ResponseError devidamente estruturado.
         // verifica se é um BusinessException, se for faz o request e monta o response entity
         } else { // se nao for, retornar um erro/mensagem mais generica
             String message = messageSource.getMessage("error.server", new Object[]{e.getMessage()}, null);
@@ -40,7 +40,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
             return handleExceptionInternal(e, error, headers(), HttpStatus.INTERNAL_SERVER_ERROR, request);
         }
     }
-    @ExceptionHandler({BusinessException.class})
+    @ExceptionHandler({BusinessException.class}) // nossa class BusinessException
     // Response Entitiy criado pelo handleBusinessException
     //Toda exceção de negócio vai retornar uma resposta HTTP com status code 409 - CONFLICT, pois consideramos exceções de negócio como conflitos de fluxo
     private ResponseEntity<Object> handleBusinessException(BusinessException e, WebRequest request) {
