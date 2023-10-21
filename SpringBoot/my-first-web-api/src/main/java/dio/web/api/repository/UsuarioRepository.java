@@ -1,5 +1,7 @@
 package dio.web.api.repository;
 
+import dio.web.api.handler.BusinessException;
+import dio.web.api.handler.CamposObrigatoriosException;
 import dio.web.api.model.Usuario;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +11,17 @@ import java.util.List;
 @Repository
 public class UsuarioRepository { // fake banco de dados, simulando um banco de dados
     public void save(Usuario usuario){
+        if(usuario.getLogin()== null){ // quando não inserimos nosso login, isto é, ele for null, lançaremos a nossa Exception que é uma BusinessException
+          //  throw new BusinessException("O campo login é obrigatório"); // ideal para quando tivermos, varios tipos de exception que podem ocorrer com diferentes tipos de negocios
+            // como temos 2 campos obrigatórios, podemos criar uma exception que extenda nosso BusinessException e tenha uma mensagem padrão para esse tipo de exceção
+            throw  new CamposObrigatoriosException("login"); // o campo(parametro) recebe login
+        }
+        if(usuario.getPassword() == null){
+            throw  new CamposObrigatoriosException("password");
+        } // com isso temos uma única exception que padroniza a mensagem para exceçoes em que precisamos de campos obrigatórios, e indicamos o nome de tal campo que é obrigatorio
+        // evitando redundancia, escrita de código repetitiva.
+
+
         if(usuario.getId()==null)
             System.out.println("SAVE - Recebendo o usuário na camada de repositório");
         else

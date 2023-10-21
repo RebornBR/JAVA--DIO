@@ -27,7 +27,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+    <!-- códigos para funcionamento do SWAGGER-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -64,8 +64,16 @@
 			<artifactId>jackson-databind-nullable</artifactId>
 			<version>0.2.6</version>
 		</dependency>
+		<!-- códigos para funcionamento do SWAGGER-->
 
-	</dependencies>
+		<!--Para funcionar nosso @Resources-->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -73,6 +81,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- códigos para funcionamento do SWAGGER-->
 			<plugin>
 				<groupId>org.openapitools</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>
@@ -97,6 +107,7 @@
 								<delegatePattern>true</delegatePattern>
 								<interfaceOnly>true</interfaceOnly>
 								<useJakartaEe>true</useJakartaEe>
+								<!-- códigos para funcionamento do SWAGGER-->
 								<!--								<useSpringBoot3>true</useSpringBoot3>-->
 							</configOptions>
 						</configuration>
