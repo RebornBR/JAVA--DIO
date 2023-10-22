@@ -15,7 +15,7 @@ public class QuestaoController {
 
     @Autowired
     private QuestaoRepository Qrepository;
-    @PostMapping("/salvarquestao/{}")
+    @PostMapping("/salvarquestao")
     public void salvarQuestao(@RequestBody Questao questao){
         Qrepository.save(questao);
         if(questao.getPergunta() == null){
